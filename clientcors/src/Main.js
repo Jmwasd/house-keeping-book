@@ -1,14 +1,16 @@
 import React from "react";
 
 function Main({ history }) {
+  const { state } = history.location;
   const onClick = () => {
-    console.log("hio");
     history.push("/login");
   };
   return (
-    <div>
-      <button onClick={onClick}>login page로 이동</button>
-    </div>
+    <>
+      <div>수입 : {state.income}</div>
+      <div>지출 : {state.expenditure}</div>
+      <button onClick={onClick}>로그아웃</button>
+    </>
   );
 }
 
