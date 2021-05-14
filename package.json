@@ -1,0 +1,28 @@
+{
+  "name": "house-keeping-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risha939/house-keeping-book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/risha939/house-keeping-book/issues"
+  },
+  "homepage": "https://github.com/risha939/house-keeping-book#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.6",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.11.1",
+    "mysql": "^2.18.1"
+  }
+}
