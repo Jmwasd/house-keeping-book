@@ -1,19 +1,17 @@
-import React, { useReducer } from "react";
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import login from "./Login";
+import sign from "./Sign";
 import main from "./Main";
-import signup from "./Signup";
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <>
         <Switch>
-          <Route exact path={"/"} component={main} />
-          <Route path={"/login"} component={login} />
-          <Route path={"/signup"} component={signup} />
+          <Route exact path={"/"} component={sign} />
+          <Route path={"/main"} component={main} />
         </Switch>
-      </div>
+      </>
     </BrowserRouter>
   );
 }
